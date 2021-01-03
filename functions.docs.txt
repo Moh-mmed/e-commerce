@@ -1,0 +1,17 @@
+==============================================
+==========   Functions DOCS         ==========
+==============================================
+
+
+ 1) getAllFrom($field, $table, $where = NULL, $andsQuery = NULL $orderBy=NULL, $order='DESC'){ //function block}: gets a specific field from DATABASE 
+
+    @$field: field you want to fetch
+    @$table: table name to fetch from
+    @$where: condition
+    @$andsQuery: AND added to condition
+    @$orderBy: field name to order by
+    @$order: ordering type 
+
+
+
+ 2)     

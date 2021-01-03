@@ -1,0 +1,602 @@
+/* main rules */
+
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+body {
+    background-color: #f4f4f4;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+}
+
+
+/*
+// Start General Rules
+*/
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: #6c757d;
+    margin: 40px 0;
+}
+
+
+/* Start Empty Items*/
+
+.pending {
+    text-align: center;
+    padding: 20px;
+}
+
+.empty .pending p {
+    padding: 40px 50px;
+    background-color: #d5d5d6;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #8f9292;
+}
+
+.empty a.btn {
+    position: relative;
+    left: 22px;
+}
+
+.empty a.btn .fas {
+    margin-right: 5px !important;
+    font-size: 12px;
+    position: relative;
+    bottom: 1px;
+}
+
+
+/* EndEmpty Items*/
+
+
+/*
+// End General Rules
+*/
+
+.container.login {
+    max-width: 400px;
+    margin: 100px auto;
+}
+
+.contact-form h1 {
+    font-weight: 600;
+}
+
+.contact-form .form-control {
+    background-color: #eaeaea !important;
+}
+
+
+/* Start Navbar */
+
+.navbar {
+    padding: .5rem 2rem !important;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar .navbar-nav {
+    margin-right: 27px !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(255 255 255);
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    color: rgb(255 255 255);
+    background-color: transparent
+}
+
+.dropdown-menu {
+    background-color: #343a40;
+    border: none;
+}
+
+.dropdown-item {
+    padding: .25rem 0.5rem;
+    color: rgba(255, 255, 255, .5)
+}
+
+@media(max-width:991px) {
+    .navbar {
+        padding: 0.3rem 2rem !important;
+    }
+    .nav-link {
+        padding: 2px 0;
+    }
+    .nav-link input[type='button'] {
+        width: 100%;
+        margin: 10px 0
+    }
+    .navbar-dark .navbar-toggler {
+        border-color: transparent
+    }
+}
+
+
+/* End Navbar */
+
+
+/*Start Dashboard*/
+
+.home-stats a:hover {
+    text-decoration: none !important;
+}
+
+.home-stats .stat {
+    border-radius: 5px;
+    background-color: rgb(52 58 64);
+}
+
+.home-stats .members {
+    background-color: #3498db;
+}
+
+.home-stats .requests {
+    background-color: #c03956;
+}
+
+.home-stats .comments {
+    background-color: #d35400;
+}
+
+.home-stats .items {
+    background-color: #8e44ad !important;
+}
+
+.home-stats h3 {
+    color: rgba(255, 255, 255, .5);
+}
+
+.home-stats a {
+    color: aliceblue;
+}
+
+.home-stats .card-body span {
+    display: block;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.latest .panel-body {
+    border-radius: 8px;
+    background-color: #343a40;
+    color: azure;
+}
+
+.latest .panel-body .member {
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 5px 3px 5px 8px;
+    overflow: hidden;
+}
+
+.latest .panel-heading span {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.latest .panel-heading i {
+    position: relative;
+    font-size: 1.1em;
+    bottom: 2px;
+    margin-right: 5px;
+}
+
+.latest .panel-text i {
+    margin-right: 5px !important;
+}
+
+.latest .panel-text .btn {
+    font-size: 14px;
+}
+
+.latest .panel-body span.fullname {
+    display: inline-block;
+    line-height: 30px;
+    font-size: 1.1em;
+    font-weight: 550;
+}
+
+.latest .panel-body .member:nth-child(odd) {
+    background-color: azure;
+    color: #000000d9;
+}
+
+.latest .panel-body .member:nth-child(even) {
+    background-color: #c7c7c7;
+    color: #000000d9;
+}
+
+.latest .panel-heading .toggle-info i {
+    position: relative;
+    top: 3px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all .5s linear;
+}
+
+.latest .panel-heading .toggle-info:hover {
+    color: rgba(255, 255, 255, .5);
+}
+
+.latest .panel-heading .toggle-info.selected i {
+    transform-origin: center;
+    transform: rotate(180deg);
+}
+
+
+/*End Dashboard*/
+
+
+/* Start Members Page*/
+
+.container.member {
+    max-width: 600px;
+}
+
+
+/*Start Form*/
+
+.update-info label,
+.member-add label {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    letter-spacing: -1px;
+    color: #6c757d
+}
+
+.update-info input[type="submit"],
+.member-add input[type="submit"] {
+    font-size: 1.5em;
+}
+
+.update-info input,
+.member-add input {
+    box-shadow: 0 0.18rem 0.5rem rgba(0, 0, 0, .075)!important;
+}
+
+.update-info input.error,
+.member-add input.error {
+    box-shadow: 0 0 0.4rem red !important;
+    margin-bottom: 8px;
+}
+
+.update-info input.success,
+.member-add input.success {
+    box-shadow: 0 0 0.4rem #00FF40 !important;
+    margin-bottom: 8px;
+}
+
+
+/*End Form*/
+
+
+/*Start Add New Member Form*/
+
+.member-add .form-group:nth-of-type(2) {
+    position: relative;
+}
+
+.member-add .form-group>.fa-eye {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    color: #6c757d
+}
+
+
+/*End Add New Member Form*/
+
+
+/*Start Manage Page*/
+
+
+/*Table*/
+
+.member-manage table {
+    width: 100%;
+}
+
+.member-manage .fas,
+.member-manage .far {
+    margin-right: 5px !important;
+}
+
+.member-manage .btn {
+    font-size: 15px;
+}
+
+
+/*Table*/
+
+
+/*End Manage Page*/
+
+
+/* End Members Page*/
+
+
+/*Start Categories Page*/
+
+
+/*Start Add New Category Page*/
+
+.container.add-categories,
+.container.edit-categories {
+    max-width: 800px;
+}
+
+.add-categories label,
+.edit-categories label {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    letter-spacing: -1px;
+    color: #6c757d
+}
+
+
+/*Start Add New Category Form*/
+
+.add-categories .radio-field,
+.edit-categories .radio-field {
+    height: calc(1.5em + 1rem + 2px);
+    padding: .5rem 1rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    color: #495057;
+}
+
+.add-categories .radio-field label,
+.edit-categories .radio-field label {
+    margin-right: 3px;
+}
+
+
+/*End Add New Category Form*/
+
+
+/*Start Manage Categories*/
+
+.categories-manage .categories-holder {
+    padding: 10px 30px;
+    background-color: #343a40;
+    border-radius: 8px;
+}
+
+.categories-manage .categories-holder .sorting {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.categories-manage .categories-holder .sorting a {
+    color: #fff;
+    margin-right: 3px;
+}
+
+.categories-manage .categories-holder .sorting a.active {
+    color: #3498db;
+    font-size: 18px;
+}
+
+.categories-manage .categories-holder .sorting a.disactive {
+    font-size: 16px;
+}
+
+.categories-manage .categories-holder .category {
+    position: relative;
+    padding: 10px;
+    margin: 0 0 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.categories-manage .categories-holder .hidden-buttons {
+    position: absolute;
+    top: 10px;
+    right: -150px;
+    transition: all .5s ease-in-out;
+}
+
+.categories-manage .categories-holder .category:hover .hidden-buttons {
+    right: 15px;
+}
+
+.categories-manage .hidden-buttons a.btn .fas {
+    margin-right: 5px !important;
+    font-size: 12px;
+    position: relative;
+    bottom: 1px;
+}
+
+.categories-manage .hidden-buttons a.btn {
+    font-size: 15px;
+}
+
+.categories-manage .categories-holder span.head {
+    font-family: 'Raleway', sans-serif;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 10px;
+    color: #495057;
+}
+
+.categories-manage .categories-holder span.text {
+    display: block;
+    font-size: 1.1rem;
+    color: #495057;
+}
+
+.categories-manage .categories-holder .visible {
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 0px 5px;
+    margin-right: 10px;
+    background-color: #28a745;
+    color: #ffff;
+    cursor: pointer;
+}
+
+.categories-manage .categories-holder .hidden {
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 0px 5px;
+    margin-right: 10px;
+    background-color: #c0392b;
+    color: #ffff;
+    cursor: pointer;
+}
+
+.categories-manage a.btn .fas {
+    margin-right: 5px !important;
+}
+
+.categories-manage .sub-cats {
+    background-color: rgb(218 218 218 / 38%);
+    padding: 2px 8px;
+    margin-top: 6px;
+    border-radius: 15px;
+}
+
+.categories-manage .sub-cats a:nth-of-type(1),
+.categories-manage .sub-cats a:nth-of-type(1):hover {
+    text-decoration: none;
+    color: #343a40;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.categories-manage .sub-cats .fa-edit {
+    margin-right: 5px;
+    color: #28a745;
+}
+
+.categories-manage .sub-cats .fa-trash-alt {
+    margin-right: 5px;
+    color: #bd2130;
+}
+
+
+/*End Manage Categories*/
+
+
+/*End Categories Page*/
+
+
+/* Start Items Page*/
+
+
+/*Start Add New Item */
+
+.container.add-items,
+.container.edit-items {
+    max-width: 800px;
+}
+
+.add-items label,
+.edit-items label {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    letter-spacing: -1px;
+    color: #6c757d
+}
+
+
+/*End Add New Item */
+
+
+/*Start Manage Items */
+
+.container.manage-items {
+    max-width: 100%;
+}
+
+
+/*Table*/
+
+.manage-items table {
+    width: 100%;
+}
+
+.manage-items .fas,
+.manage-items .far {
+    margin-right: 5px !important;
+}
+
+.manage-items .btn {
+    font-size: 15px;
+}
+
+
+/*Table*/
+
+
+/*End Manage Items */
+
+
+/* End Items Page*/
+
+
+/* Start Comments Page*/
+
+
+/*Start Manage Comments */
+
+.container.manage-items {
+    max-width: 100%;
+}
+
+
+/*Table*/
+
+.manage-comments table {
+    width: 100%;
+}
+
+.manage-comments .fas,
+.manage-comments .far {
+    margin-right: 5px !important;
+}
+
+.manage-comments .btn {
+    font-size: 15px;
+}
+
+
+/*Table*/
+
+
+/*End Manage Comments */
+
+
+/*Start Edit Comment*/
+
+.container.edit-comment {
+    max-width: 800px;
+}
+
+.edit-comment textarea {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    color: #6c757d
+}
+
+
+/*End Edit Comment*/
+
+
+/* End Comments Page*/
