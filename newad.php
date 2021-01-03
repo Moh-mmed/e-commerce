@@ -92,12 +92,12 @@ if (isset($_SESSION['user'])) {
             move_uploaded_file($productImgTmpName, $_SERVER['DOCUMENT_ROOT'] . "/e-commerce/admin/uploads/product/" . $fileName); //Moves an uploaded file to a new location you should use a function that get the path of the directory
             echo "<h1 class=' mt-5 mb-5 text-center headers '>Added Item</h1>";
             //Update Database
-            // Prepare A Query To Update Data In Database
-            // $STM = $db->prepare("INSERT INTO items (Name,Price,Currency,Add_Date,Country_Made,Description,Image,Status,Cat_ID,Member_ID) VALUES (?,?,?,now(),?,?,?,?,?,?)");
-            // $STM->execute([$name, $price, $currency, $madeIn, $description, $fileName, $status, $category, $owner]);
-            // //Echo success Message
-            // $message =  '<div class="container p-2"><div class ="alert alert-success">' . $STM->rowCount() . ' Records Inserted </div></div>';
-            // redirect($message, 'newad.php', 1); // redirect function defined in functions.php
+            //Prepare A Query To Update Data In Database
+            $STM = $db->prepare("INSERT INTO items (Name,Price,Currency,Add_Date,Country_Made,Description,Image,Status,Cat_ID,Member_ID) VALUES (?,?,?,now(),?,?,?,?,?,?)");
+            $STM->execute([$name, $price, $currency, $madeIn, $description, $fileName, $status, $category, $owner]);
+            //Echo success Message
+            $message =  '<div class="container p-2"><div class ="alert alert-success">' . $STM->rowCount() . ' Records Inserted </div></div>';
+            redirect($message, 'newad.php', 1); // redirect function defined in functions.php
         }
     }
 
