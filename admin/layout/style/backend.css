@@ -23,6 +23,26 @@ h1 {
 }
 
 
+/*Start login*/
+
+.top-svg {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+}
+
+.bottom-svg {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+/*end login*/
+
+
 /* Start Empty Items*/
 
 .pending {
@@ -60,8 +80,9 @@ h1 {
 */
 
 .container.login {
+    padding: 100px 0;
     max-width: 400px;
-    margin: 100px auto;
+    margin: 50px auto;
 }
 
 .contact-form h1 {
